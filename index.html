@@ -9,8 +9,12 @@
 <body>
   <header class="topo">
     <div class="container topo-conteudo">
-      <span class="logo">Clean Up</span>
-      <nav>
+      <a href="#" class="logo" aria-label="Clean Up - Página inicial">
+        <svg class="icone-gota" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path fill="currentColor" d="M12 2.5C12 2.5 5 10.2 5 15a7 7 0 0 0 14 0c0-4.8-7-12.5-7-12.5zm0 17.5a5 5 0 0 1-5-5c0-2.7 3.3-7.2 5-9.5 1.7 2.3 5 6.8 5 9.5a5 5 0 0 1-5 5z"/>
+        </svg>
+        <span>Clean Up</span>
+      </a>      <nav>
         <a href="#servicos">Serviços</a>
         <a href="#diferenciais">Vantagens</a>
         <a href="#orcamento" class="btn-pequeno">Orçamento</a>
@@ -31,10 +35,51 @@
         </button>
       </div>
     </section>
+    <section id="galeria" class="secao secao-clara">
+      <div class="container">
+        <h2>Estofados e Resultados</h2>
+    
+        <div class="carrossel" aria-label="Galeria de fotos da Clean Up">
+          <div class="carrossel-slides">
+            <figure class="slide ativo">
+              <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80"
+                alt="Sofá cinza limpo e organizado em sala iluminada"
+              />
+              <figcaption>Sofás higienizados com acabamento limpo e agradável.</figcaption>
+            </figure>
+    
+            <figure class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                alt="Quarto com cama e colchão bem cuidado"
+              />
+              <figcaption>Cuidados para colchões e ambientes mais saudáveis.</figcaption>
+            </figure>
+    
+            <figure class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=80"
+                alt="Estofado de sala em ambiente claro"
+              />
+
+              <figcaption>Proteção e conservação para o tecido do dia a dia.</figcaption>
+            </figure>
+          </div>
+    
+          <div class="carrossel-controles">
+            <button type="button" id="btn-anterior" class="btn-carrossel">Anterior</button>
+            <div id="carrossel-indicadores" class="indicadores"></div>
+            <button type="button" id="btn-proximo" class="btn-carrossel">Próximo</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="servicos" class="secao">
       <div class="container">
         <h2>Serviços Principais</h2>
+        
         <div class="grid-cards">
           <article class="card">
             <h3>Higienização de Estofados</h3>
@@ -61,7 +106,7 @@
       </div>
     </section>
 
-
+    
     <section id="orcamento" class="secao">
       <div class="container centro">
         <h2>Solicite seu orçamento</h2>
